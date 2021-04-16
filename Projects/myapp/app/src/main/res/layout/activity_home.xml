@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acticity.HomeActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.example.myapp.view.FixedViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        app:tl_iconHeight="23dp"
+        app:tl_iconWidth="23dp"
+        app:tl_indicator_color="#2c97de"
+        app:tl_indicator_height="0dp"
+        app:tl_textSelectColor="#2c97de"
+        app:tl_textUnselectColor="#66000000"
+        app:tl_textsize="12sp"
+        app:tl_underline_color="#dddddd"
+        app:tl_underline_height="1dp"/>
+</LinearLayout>
